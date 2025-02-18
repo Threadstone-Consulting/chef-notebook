@@ -1,0 +1,46 @@
+
+
+Checkout:
+    - Email: 
+        - OrderConfirmation
+        - Shipping
+
+    Shipping:
+        - Generate Shipping Label
+        - Tracking Page:
+            - Estimated Time of Arrival
+            - Custom Map
+
+Variant Groups:
+e.g size , color
+    - Shipping Sizes based on Variants
+
+
+
+Cart:
+    - AddToCart
+    - RemoveToCart
+    - EmptyToCart
+    - HoldInvertory
+
+
+Product = {
+    id: string;
+    name: string;
+    price: number;
+    inventory: number;
+    isShippable: boolean
+    tags?: string[];
+    parcels?:[{
+          "length": number,
+          "width": number,
+          "height": number,
+          "distance_unit":string,
+          "weight":"2",
+          "mass_unit":"lb"
+    }],
+    currency: string;
+    imageSrc: string;
+    imageAlt: string;
+}
+

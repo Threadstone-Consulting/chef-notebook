@@ -15,7 +15,7 @@ const Hero = () => {
         The app that saves your recipes and transcribes your instagram reels
       </p>
       <button className="btn btn-primary btn-wide">
-        Get {config.appName}
+        Get Chef's Notebook
       </button>
       <TestimonialsAvatars priority={true} />
       </div>

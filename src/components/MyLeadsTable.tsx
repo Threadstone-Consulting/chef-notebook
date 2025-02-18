@@ -1,8 +1,8 @@
 "use client";
-
+// TODO: Fix the comments to work
 import { useState, useEffect } from "react";
 import apiClient from "@/libs/api";
-import DomainButtonPopover from "./DomainButtonPopover";
+// import DomainButtonPopover from "./DomainButtonPopover";
 import { useSession } from "next-auth/react";
 export const dynamic = "force-dynamic";
 
@@ -13,7 +13,7 @@ export default function MyLeadsTable() {
     const [leads, setLeads] = useState([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [errorMSG, setErrorMSG] = useState<string>("");
-    const firstDomain = session?.user?.domains[0]
+    // const firstDomain = session?.user?.domains[0]
     const [domain, setDomain] = useState<string>()
 
     useEffect(() => {
@@ -53,7 +53,7 @@ export default function MyLeadsTable() {
 
                     :
                     <div className="">
-                        <DomainButtonPopover className="m-4" domains={session?.user?.domains} setDomainState={setDomain} domainState={domain} />
+                        {/*<DomainButtonPopover className="m-4" domains={session?.user?.domains} setDomainState={setDomain} domainState={domain} />*/}
                         <table className="table table-xs">
                             <thead>
                                 <tr>

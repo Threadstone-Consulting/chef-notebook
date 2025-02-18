@@ -1,6 +1,5 @@
-
+import React from "react";
 import Header from "@/components/Header";
-
 import { data } from '@/components/Ecommerce/Products/testproducts'
 import { Product } from '@/components/Ecommerce/types'
 import ProductCard from "@/components/Ecommerce/Products/ProductCard";

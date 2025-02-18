@@ -12,10 +12,10 @@ const Hero = () => {
       Chef's Notebook
       </h1>
       <p className="text-lg opacity-80 leading-relaxed">
-        The app that saves your recipes 
+        The app that saves your recipes and transcribes your instagram reels
       </p>
       <button className="btn btn-primary btn-wide">
-        Get {config.appName}
+        Get Chef's Notebook
       </button>
       <TestimonialsAvatars priority={true} />
       </div>

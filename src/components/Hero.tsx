@@ -1,6 +1,10 @@
+"use client";
+import React, { useState } from 'react';
 import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
 import config from "@/config";
+import IngredientListButton from "@/components/IngredientListButton"
+
 
 const Hero = () => {
   return (
@@ -13,12 +17,14 @@ const Hero = () => {
       </h1>
       <p className="text-lg opacity-80 leading-relaxed">
         The app that saves your recipes and transcribes your instagram reels
-      </p> 
-      <div className="flex justify-center"></div>
+      </p>
+      {/* how to get rid of massive gap between text above and search bar? */}
+      < IngredientListButton/>
+      {/* <div className="flex justify-center"></div>
       <div className="join">
   <input className="input input-bordered join-item w-[600px]" placeholder="Enter Recipe URL" />
   <button className="btn join-item rounded-r-full bg-blue-500 text-white hover:bg-blue-600">Generate</button>
-  </div>
+  </div> */}
       {/* <button className="btn btn-primary btn-wide">
         Get Chef's Notebook
       </button> */}

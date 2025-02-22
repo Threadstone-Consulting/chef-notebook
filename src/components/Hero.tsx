@@ -20,14 +20,6 @@ const Hero = () => {
       </p>
       {/* how to get rid of massive gap between text above and search bar? */}
       < IngredientListButton/>
-      {/* <div className="flex justify-center"></div>
-      <div className="join">
-  <input className="input input-bordered join-item w-[600px]" placeholder="Enter Recipe URL" />
-  <button className="btn join-item rounded-r-full bg-blue-500 text-white hover:bg-blue-600">Generate</button>
-  </div> */}
-      {/* <button className="btn btn-primary btn-wide">
-        Get Chef's Notebook
-      </button> */}
       {/* <TestimonialsAvatars priority={true} /> */}
       
   </div>

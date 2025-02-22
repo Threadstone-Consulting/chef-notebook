@@ -1,14 +1,17 @@
-"use client";
+'use client';
 import React, { useState } from 'react';
 
 const GenerateText: React.FC = () => {
   const [showText, setShowText] = useState(false);
+
+  const [ingredients, setIngredients] = useState(['eggs', 'milk', 'flour']);
+
   const handleGenerate = () => {
     setShowText(true);
   };
 
   return (
-    <div className="flex flex-col gap-[20px] items-center justify-center min-h-screen">
+    <div className="flex flex-col gap-[20px] min-h-screen">
       <div className="join">
         <input
           className="input input-bordered join-item w-[600px]"
@@ -22,13 +25,23 @@ const GenerateText: React.FC = () => {
         </button>
       </div>
       {showText && (
-        <p className="mt-4 text-lg text-gray-700">
-          Ingredients: <br/> 
-          -Eggs <br/> {/* How to incease the space between each listed ingreadient and also how to style font? */}
-          -Etc <br/>
-
-        
-        </p>
+        <div>
+          <p className="flex mt-4 text-lg text-gray-700">
+            Ingredients: <br />
+          </p>
+          <div className="flex px-10">
+            <ul className="list-decimal">
+              {ingredients.map((ingredient, index) => (
+                <li key={index} className="">
+                  {ingredient}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className="flex mt-4 text-lg text-gray-700">
+            Instructions: <br />
+          </p>
+        </div>
       )}
     </div>
   );
